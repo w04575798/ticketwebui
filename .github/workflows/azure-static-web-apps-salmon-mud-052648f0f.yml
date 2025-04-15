@@ -26,7 +26,7 @@ jobs:
       - name: Deploy prebuilt root folder to Azure
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_SALMON_MUD_052648F0F }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
           app_location: "."               # Root of the repo where the prebuilt app is
           api_location: ""                # Empty, as no API folder is used
