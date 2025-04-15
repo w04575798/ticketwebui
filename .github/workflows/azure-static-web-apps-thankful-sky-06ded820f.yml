@@ -29,7 +29,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_THANKFUL_SKY_06DED820F }}
           action: "upload"
           app_location: "/"  # Root directory, where you have the dist folder
-          output_location: "dist"  # Specify the dist folder here instead of "build"
+          output_location: "/"  
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
